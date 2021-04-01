@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="format-detection" content="telephone=no">
+	<title>Quan hệ cổ đông</title>
+	<meta name="robots" content="index, follow">
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="images/favicon.png">
+
+	<!-- @@include('module/headmeta.html') -->
+
+	
+	
+
+	<!-- <link rel="stylesheet" href="css/list-library.css">
+	<link rel="stylesheet" href="css/styles.css"> -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/styles.min.css">
+
+	
+	
+</head>
+<body class="fptOnline" id="body_fpt_online" data-height-small="false" itemscope itemtype="http://schema.org/WebPage">
+	<div class="load"><span class="loading"></span></div>
+
+
+	
+	<header class="header header-not-home header-sticky">
+	
+		<div class="header-main">
+			<div class="container">
+				<div class="row">
+					<div class="header-main-inner">
+						<div class="header-left">
+							<button class="box-btn-show-menu" id="btn_show_menu" onclick="showMenu();">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+							<div class="box-logo">
+								<a class="logo" href="index.html" title="FPT Online">
+									<img src="images/logo.svg" alt="FPT Online">
+								</a>
+							</div>
+							<button class="box-btn-show-search btn_showSearch">
+								<span class="btn-show-search"></span>
+							</button>
+						</div>
+
+						<div class="header-right">
+							<div class="header-right-inner">
+								<ul class="list-menu-cate">
+
+									<li class="item-menu-cate">
+										<a class="menu-link active" href="index.html" title="">
+											<span class="menu-name">Trang chủ</span>
+										</a>
+									</li>
+									<li class="item-menu-cate">
+										<a class="menu-link" href="solution.html" title="">
+											<span class="menu-name">Giải pháp</span>
+										</a>
+										<ul>
+											<li><a href="#">Giải pháp 01</a></li>
+											<li><a href="#">Giải pháp 02</a></li>
+											<li><a href="#">Giải pháp 03</a></li>
+										</ul>
+									</li>
+									<li class="item-menu-cate">
+										<a class="menu-link" href="partner.html" title="">
+											<span class="menu-name">Đối tác</span>
+										</a>
+									</li>
+									<li class="item-menu-cate">
+										<a class="menu-link" href="community-relations.html" title="">
+											<span class="menu-name">Quan hệ cổ đông</span>
+										</a>
+									</li>
+									<li class="item-menu-cate">
+										<a class="menu-link" href="recruitment.html" title="">
+											<span class="menu-name">Tuyển dụng</span>
+										</a>
+									</li>
+									<!-- <li class="item-menu-cate">
+										<a class="menu-link" href="about-us.html" title="">
+											<span class="menu-name">Giới thiệu</span>
+										</a>
+									</li>
+									<li class="item-menu-cate">
+										<a class="menu-link" href="javascript:void(0)" title="">
+											<span class="menu-name">Liên hệ</span>
+										</a>
+									</li> -->
+									<li class="item-menu-cate btn-menu">
+										<span class="menu-link btn_showSearch" title="Tìm kiếm"></span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<div class="search_area" id="search_area">
+		<div class="container">
+			<div class="search-area-inner">
+				<form action="search.html" method="post" class="form-search">
+					<div class="form-group">
+						<div class="easy-autocomplete" style="width: 100%; ">
+							<input class="input-search" name="keyword" value="" type="search" id="input-search-mb" placeholder="Tìm kiếm..." autocomplete="off">
+							<div class="easy-autocomplete-container" id="eac-container-input-search-mb">
+								<ul style="display: none;">
+									<li>
+										<div class="eac-item">
+											<a href="#" title="">
+												<img src="images/no-image.jpg" alt=""> Kết quả tìm kiếm 1
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="eac-item">
+											<a href="#" title="">
+												<img src="images/no-image.jpg" alt=""> Kết quả tìm kiếm 2
+											</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<button class="btn-search"></button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	
+
+
+	<main class="main" role="main">
+
+		<section class="wrapper-breadcrumb-area" 
+			style="background: url(images/banner-community-relations.png) no-repeat; background-size: cover;">
+			<div class="container">
+				<div class="wrapper-breadcrumb-area-inner">
+					<div class="breadcrumb-content">
+						<h1 class="title-area">Quan hệ cổ đông</h1>
+						<p class="des-area">Minh bạch, chính xác, kịp thời</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<nav class="breadcrumb-area" aria-label="breadcrumb">
+			<div class="container">
+				<ol id="breadcrumb" class="breadcrumb-inner">
+					<li class="breadcrumb-item"><a href="index.html" title="">Trang chủ</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Quan hệ cổ đông</li>
+				</ol>
+			</div>
+		</nav>
+
+
+
+		<section class="section-news-list clearfix">
+			<div class="container clearfix">
+				<div class="news-inner">
+
+
+					<div class="area-primary news-box-list">
+
+						<div class="news-list">
+							<div class="news-item item-top">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="news-detail-aside-right.html" title="">
+											<img src="images/post-01.png" alt="" class="responsive">
+										</a>
+									</div>
+									<div class="item-info">
+										<h3 class="item-title">
+											<a class="item-title-a" href="news-detail.html" title="">
+												FPT Online bầu HĐQT nhiệm kỳ mới trong đại hội cổ đông 2021
+											</a>
+										</h3>
+										<p class="item-description">
+											Đại hội cổ đông năm 2021 của CTCP Dịch vụ Trực tuyến FPT (FPT Online, mã FOC) diễn ra ngày 23/3 sẽ bầu HĐQT và Ban kiểm soát khóa mới, nhiệm kỳ 2021-2026.
+										</p>
+										<div class="publish-time">07/09/2020</div>
+									</div>
+								</div>
+							</div><!-- End .news-item -->
+						</div>
+
+						<div class="line-dot clearfix"></div>
+
+						<div class="news-list">
+
+								<div class="news-item">
+									<div class="item-inner">
+										<div class="item-image">
+											<a class="item-image-a" href="news-detail-aside-right.html" title="">
+												<img src="images/post-02.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="item-info">
+											<h3 class="item-title">
+												<a class="item-title-a" href="news-detail.html" title="">
+													FPT Online chia cổ tức tiền mặt khủng 200%
+												</a>
+											</h3>
+											<p class="item-description">
+												Hội đồng quản trị FPT Online đang trình cổ đông phương án dùng lợi nhuận chưa phân phối trả cổ tức 2020 với tỷ lệ 200% bằng tiền mặt.
+											</p>
+											<div class="publish-time">07/09/2020</div>
+										</div>
+									</div>
+								</div><!-- End .news-item -->
+								<div class="news-item">
+									<div class="item-inner">
+										<div class="item-image">
+											<a class="item-image-a" href="news-detail-aside-right.html" title="">
+												<img src="images/post-03.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="item-info">
+											<h3 class="item-title">
+												<a class="item-title-a" href="news-detail.html" title="">
+													Giải chạy đêm VnExpress nhận Sao Lao động FPT
+												</a>
+											</h3>
+											<p class="item-description">
+												Với thành tích đạt hiệu ứng truyền thông cao với hàng trăm nghìn bài đăng, tiếp cận hàng triệu người trên mạng xã hội, giải chạy đêm VnExpress Marathon Hanoi Midnight của FPT Online xuất sắc...
+											</p>
+											<div class="publish-time">07/09/2020</div>
+										</div>
+									</div>
+								</div><!-- End .news-item -->
+								<div class="news-item">
+									<div class="item-inner">
+										<div class="item-image">
+											<a class="item-image-a" href="news-detail-aside-right.html" title="">
+												<img src="images/post-02.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="item-info">
+											<h3 class="item-title">
+												<a class="item-title-a" href="news-detail.html" title="">
+													VnExpress nhận Sao Chiến công cho tinh thần tác nghiệp xuất sắc
+												</a>
+											</h3>
+											<p class="item-description">
+												38.000 tin bài tuyến Covid, kỷ lục trung bình 8,2 triệu users/tháng, trong đó tháng 3 đạt 13 triệu, hơn 70 triệu pageviews, FPT Online vừa nhận 2 Sao Chiến công FPT đầu tiên trong lịch sử.
+											</p>
+											<div class="publish-time">07/09/2020</div>
+										</div>
+									</div>
+								</div><!-- End .news-item -->
+								<div class="news-item">
+									<div class="item-inner">
+										<div class="item-image">
+											<a class="item-image-a" href="news-detail-aside-right.html" title="">
+												<img src="images/post-03.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="item-info">
+											<h3 class="item-title">
+												<a class="item-title-a" href="news-detail.html" title="">
+													FPT Online tiên phong số hoá check-in giải chạy
+												</a>
+											</h3>
+											<p class="item-description">
+												Sản phẩm check-in online qua QR code của chuỗi giải VnExpress Marathon nhận được nhiều khen ngợi cùng nhiều hướng phát triển thêm sản phẩm từ Ban giám khảo.
+											</p>
+											<div class="publish-time">07/09/2020</div>
+										</div>
+									</div>
+								</div><!-- End .news-item -->
+								<div class="news-item">
+									<div class="item-inner">
+										<div class="item-image">
+											<a class="item-image-a" href="news-detail-aside-right.html" title="">
+												<img src="images/post-02.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="item-info">
+											<h3 class="item-title">
+												<a class="item-title-a" href="news-detail.html" title="">
+													VnExpress tương tác độc giả tốt hơn nhờ chuyển đổi số
+												</a>
+											</h3>
+											<p class="item-description">
+												Các bài tường thuật thể thao trực tiếp luôn trong nhóm dẫn đầu về lượng bình luận của độc giả ở VnExpress: 2.000 - 3.000 comment, như loạt bài Seagames tháng 12/2019.
+											</p>
+											<div class="publish-time">07/09/2020</div>
+										</div>
+									</div>
+								</div><!-- End .news-item -->
+
+						</div>
+						<div class="box-pagination clearfix">
+							<ul class="pagination pagination-lg">
+								<li><a class="active" href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+							</ul>
+						</div>
+
+
+					</div>
+					<div class="area-sidebar-right">
+						<div class="area-sidebar-right-inner box-sticky">
+							<div class="box-bctc-area">
+								<div class="sidebar-title">
+									<h2 class="title-name">Báo cáo tài chính</h2>
+								</div>
+								<div class="list-item-post">
+
+									<!-- S_ Loop items -->
+									<div class="item-post">
+										<div class="item-info">
+											<h3 class="info-title">
+												<a href="post-detail.html" title="">Báo cáo tài chính _ Quý I 2021</a>
+											</h3>
+											<div class="d-flex justify-content-between">
+												<div class="publish-time">07/09/2020</div>
+												<div class="wrap-btn-act">
+													<a href="#" class="btn-download-file">Tải xuống PDF</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item-post">
+										<div class="item-info">
+											<h3 class="info-title">
+												<a href="post-detail.html" title="">Giải chạy đêm VnExpress nhận Sao Lao động FPT</a>
+											</h3>
+											<div class="d-flex justify-content-between">
+												<div class="publish-time">07/09/2020</div>
+												<div class="wrap-btn-act">
+													<a href="#" class="btn-download-file">Tải xuống PDF</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="item-post">
+										<div class="item-info">
+											<h3 class="info-title">
+												<a href="post-detail.html" title="">VnExpress nhận Sao Chiến công cho tinh thần tác nghiệp xuất sắc</a>
+											</h3>
+											<div class="d-flex justify-content-between">
+												<div class="publish-time">07/09/2020</div>
+												<div class="wrap-btn-act">
+													<a href="#" class="btn-download-file">Tải xuống PDF</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+								<div class="d-flex justify-content-center">
+									<a href="#" title="" class="btn-viewmore">Xem thêm</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+	</main>
+	
+
+
+	<footer class="footer_area" id="footer_area">
+		<div class="footer-inner">
+			<div class="footer-middle">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-3">
+							<a class="logo-footer" href="" title="">
+								<img src="images/logo-footer.svg" alt="">
+							</a>
+						</div>
+						<div class="d-none d-sm-block col-lg-2 col-md-3 col-sm-4">
+							<div class="widget">
+								<ul class="widget_links">
+									<li><a class="bold" href="index.html" title="">Trang chủ</a></li>
+									<li><a class="bold" href="solution.html" title="">Giải pháp</a></li>
+									<li><a class="bold" href="partner.html" title="">Đối tác</a></li>
+									<li><a class="bold" href="about-us.html" title="">Về chúng tôi</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="d-none d-sm-block col-lg-2 col-md-3 col-sm-4">
+							<div class="widget">
+								<ul class="widget_links">
+									<li><a class="bold" href="community-relations.html" title="">Quan hệ cổ đông</a></li>
+									<li><a class="bold" href="recruitment.html" title="">Việc làm</a></li>
+									<li><a class="bold" href="#" title="">Case Study</a></li>
+									<li><a class="bold" href="contact.html" title="">Liên hệ</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="d-none d-sm-block col-lg-2 col-md-3 col-sm-4">
+							<div class="widget">
+								<ul class="widget_links">
+									<li><a class="font-14" href="terms-policy.html" title="">Điều khoản sử dụng</a></li>
+									<li><a class="font-14" href="terms-policy.html" title="">Chính sách bảo mật</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-1 col-0">
+							<div class="wrap-btn">
+								<span class="btn-go-top" title="Về đầu trang"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom pb-3">
+			<div class="container">
+				<div class="row">
+					<div class="col col-lg-4 col-md-3 col-sm-4 col-12 order-md-2">
+						<ul class="list-socail-ft justify-content-sm-start">
+							<li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-square"></i></a></li>
+							<li><a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter-square"></i></a></li>
+							<li><a href="#" target="_blank" title="Instagram +"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#" target="_blank" title="Youtube"><i class="fab fa-youtube-square"></i></a></li>
+						</ul>
+					</div>
+					<div class="col col-lg-8 col-md-9 col-sm-8 col-12 order-md-1">
+						<div class="copyright text-sm-start">
+							<p>© 2007-2021. Toàn bộ bản quyền thuộc về FPT Online</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<span class="btn-go-top back-to-top-badge back-to-top-small"><i class="fal fa-angle-up"></i></span>
+
+
+	<!-- Start popup menu -->
+	<aside class="aside_area" id="showNavSideMenu">
+		<div class="bg_drop" onclick="showMenu();"></div>
+		<nav class="nav-aside">
+			<ul class="list-menu-cate">
+
+				<li class="item-menu-cate">
+					<a class="menu-link" href="index.html" title="">
+						<span class="menu-name">Trang chủ</span>
+					</a>
+				</li>
+				<li class="item-menu-cate">
+					<a class="menu-link" href="solution.html" title="">
+						<span class="menu-name">Giải pháp</span>
+					</a>
+				</li>
+				<li class="item-menu-cate">
+					<a class="menu-link" href="partner.html" title="">
+						<span class="menu-name">Đối tác</span>
+					</a>
+				</li>
+				<li class="item-menu-cate">
+					<a class="menu-link" href="community-relations.html" title="">
+						<span class="menu-name">Quan hệ cổ đông</span>
+					</a>
+				</li>
+				<li class="item-menu-cate">
+					<a class="menu-link" href="recruitment.html" title="">
+						<span class="menu-name">Tuyển dụng</span>
+					</a>
+
+					<span class="btn-toggle active"></span>
+					<ul class="menu-list-lv2 active">
+					    <li class="item-menu">
+					        <a href="#" title="Menu level 2">
+					          Menu level 2
+					        </a>
+
+					        <span class="btn-toggle"></span>
+					        <ul class="menu-list-lv2">
+					            <li class="item-menu">
+					              <a href="#" title="Menu level 3">
+					                Menu level 3
+					              </a>
+					            </li>
+					        </ul>
+
+					    </li>
+					</ul>
+				</li>
+				<li class="item-menu-cate">
+					<a class="menu-link" href="about-us.html" title="">
+						<span class="menu-name">Giới thiệu</span>
+					</a>
+				</li>
+				<li class="item-menu-cate">
+					<a class="menu-link" href="contact.html" title="">
+						<span class="menu-name">Liên hệ</span>
+					</a>
+				</li>
+				<li class="item-menu-cate">
+					<a class="menu-link" href="terms-policy.html" title="">
+						<span class="menu-name">Điều khoản sử dụng</span>
+					</a>
+				</li>
+				<li class="item-menu-cate">
+					<a class="menu-link" href="terms-policy.html" title="">
+						<span class="menu-name">Chính sách bảo mật</span>
+					</a>
+				</li>
+
+			</ul>
+			<ul class="list-socail-ft">
+				<li><a href="#" title="Facebook"><i class="fab fa-facebook-square"></i></a></li>
+				<li><a href="#" title="Twitter"><i class="fab fa-twitter-square"></i></a></li>
+				<li><a href="#" title="Instagram +"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="#" title="Youtube"><i class="fab fa-youtube-square"></i></a></li>
+			</ul>
+		</nav>
+	</aside>
+	<!-- End popup menu -->
+
+
+	<!-- Start #wrap_popup_page - Group popup page - Globe -->
+	<div class="wrap-popup-page" id="wrap_popup_page">
+
+		<div class="group-action-control-right">
+			<a href="#" target="_blank" title="Gọi ngay Hotline" class="btn-control btn-feedback">
+				<span>
+					<i class="fas fa-phone"></i>
+				</span>
+				<span>Hotline</span>
+			</a>
+			<a href="#" title="Trang trên Facebook" target="_blank" class="btn-control btn-goVNE">
+				<span>
+					<i class="fas fa-comments"></i>
+				</span>
+				<span>Messenger</span>
+			</a>
+		</div>
+		
+		<div class="popup-page-home"></div>
+		
+	</div>
+	<!-- End #wrap_popup_page - Group popup page - Globe -->
+
+	<script src="js/main.min.js"></script>
+	
+	
+</body>
+</html>

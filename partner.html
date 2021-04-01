@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="format-detection" content="telephone=no">
+	<title>Đối tác</title>
+	<meta name="robots" content="index, follow">
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="images/favicon.png">
+
+	<!-- @@include('module/headmeta.html') -->
+
+	
+	
+
+	<!-- <link rel="stylesheet" href="css/list-library.css">
+	<link rel="stylesheet" href="css/styles.css"> -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/styles.min.css">
+
+	
+	
+</head>
+<body class="fptOnline" id="body_fpt_online" data-height-small="false" itemscope itemtype="http://schema.org/WebPage">
+	<div class="load"><span class="loading"></span></div>
+
+
+	
+	<header class="header header-not-home header-sticky">
+	
+		<div class="header-main">
+			<div class="container">
+				<div class="row">
+					<div class="header-main-inner">
+						<div class="header-left">
+							<button class="box-btn-show-menu" id="btn_show_menu" onclick="showMenu();">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+							<div class="box-logo">
+								<a class="logo" href="index.html" title="FPT Online">
+									<img src="images/logo.svg" alt="FPT Online">
+								</a>
+							</div>
+							<button class="box-btn-show-search btn_showSearch">
+								<span class="btn-show-search"></span>
+							</button>
+						</div>
+
+						<div class="header-right">
+							<div class="header-right-inner">
+								<ul class="list-menu-cate">
+
+									<li class="item-menu-cate">
+										<a class="menu-link active" href="index.html" title="">
+											<span class="menu-name">Trang chủ</span>
+										</a>
+									</li>
+									<li class="item-menu-cate">
+										<a class="menu-link" href="solution.html" title="">
+											<span class="menu-name">Giải pháp</span>
+										</a>
+										<ul>
+											<li><a href="#">Giải pháp 01</a></li>
+											<li><a href="#">Giải pháp 02</a></li>
+											<li><a href="#">Giải pháp 03</a></li>
+										</ul>
+									</li>
+									<li class="item-menu-cate">
+										<a class="menu-link" href="partner.html" title="">
+											<span class="menu-name">Đối tác</span>
+										</a>
+									</li>
+									<li class="item-menu-cate">
+										<a class="menu-link" href="community-relations.html" title="">
+											<span class="menu-name">Quan hệ cổ đông</span>
+										</a>
+									</li>
+									<li class="item-menu-cate">
+										<a class="menu-link" href="recruitment.html" title="">
+											<span class="menu-name">Tuyển dụng</span>
+										</a>
+									</li>
+									<!-- <li class="item-menu-cate">
+										<a class="menu-link" href="about-us.html" title="">
+											<span class="menu-name">Giới thiệu</span>
+										</a>
+									</li>
+									<li class="item-menu-cate">
+										<a class="menu-link" href="javascript:void(0)" title="">
+											<span class="menu-name">Liên hệ</span>
+										</a>
+									</li> -->
+									<li class="item-menu-cate btn-menu">
+										<span class="menu-link btn_showSearch" title="Tìm kiếm"></span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<div class="search_area" id="search_area">
+		<div class="container">
+			<div class="search-area-inner">
+				<form action="search.html" method="post" class="form-search">
+					<div class="form-group">
+						<div class="easy-autocomplete" style="width: 100%; ">
+							<input class="input-search" name="keyword" value="" type="search" id="input-search-mb" placeholder="Tìm kiếm..." autocomplete="off">
+							<div class="easy-autocomplete-container" id="eac-container-input-search-mb">
+								<ul style="display: none;">
+									<li>
+										<div class="eac-item">
+											<a href="#" title="">
+												<img src="images/no-image.jpg" alt=""> Kết quả tìm kiếm 1
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="eac-item">
+											<a href="#" title="">
+												<img src="images/no-image.jpg" alt=""> Kết quả tìm kiếm 2
+											</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<button class="btn-search"></button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	
+
+
+	<main class="main" role="main">
+
+		<section class="wrapper-breadcrumb-area" 
+			style="background: url(images/banner-partner.png) no-repeat; background-size: cover;">
+			<div class="container">
+				<div class="wrapper-breadcrumb-area-inner">
+					<div class="breadcrumb-content">
+						<h1 class="title-area">Đối tác</h1>
+						<p class="des-area">Mạng lưới đối tác, doanh nghiệp hàng đầu</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<nav class="breadcrumb-area" aria-label="breadcrumb">
+			<div class="container">
+				<ol id="breadcrumb" class="breadcrumb-inner">
+					<li class="breadcrumb-item"><a href="index.html" title="">Trang chủ</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Đối tác</li>
+				</ol>
+			</div>
+		</nav>
+
+
+
+
+		<!-- Start Home Đơn vị Area -->
+		<section class="section-unit-page bg_mask clearfix">
+			<div class="container clearfix">
+				<div class="unit-inner">
+					
+					<div class="unit-box-title">
+						<div class="title-name">Báo chí</div>
+					</div>
+					<div class="unit-box-list">
+
+						<div class="unit-list unit-list-01" id="">
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<img src="images/doi-tac-01.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<img src="images/doi-tac-02.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<img src="images/doi-tac-03.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<img src="images/doi-tac-04.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<img src="images/doi-tac-03.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<img src="images/doi-tac-04.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+								
+						</div>
+					</div>
+					
+					<div class="unit-box-title">
+						<div class="title-name">Công nghệ</div>
+					</div>
+					<div class="unit-box-list">
+
+						<div class="unit-list unit-list-02" id="">
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<img src="images/doi-tac-05.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<img src="images/doi-tac-06.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<img src="images/doi-tac-07.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<img src="images/doi-tac-08.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<img src="images/doi-tac-09.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<img src="images/doi-tac-08.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<img src="images/doi-tac-09.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+								
+						</div>
+					</div>
+					
+					<div class="unit-box-title">
+						<div class="title-name">Doanh nghiệp</div>
+					</div>
+					<div class="unit-box-list">
+
+						<div class="filter-alphabet">
+							<ul>
+								<li><a class="active" href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+								<li><a href="#">a</a></li>
+							</ul>
+						</div>
+						<div class="line-dashed d-none d-md-block"></div>
+						<div class="unit-list unit-list-03" id="">
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<img src="images/doi-tac-10.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<img src="images/doi-tac-11.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<img src="images/doi-tac-12.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<img src="images/doi-tac-13.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<img src="images/doi-tac-14.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<img src="images/doi-tac-15.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<img src="images/doi-tac-14.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<img src="images/doi-tac-15.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+								
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+		<!-- End Home Đơn vị Area -->
+
+
+
+		<section class="section-contact-area  bg-gradient-01" id="Lien_He">
+			<div class="container">
+
+				<div class="section-contact-area-inner">
+					<div class="contact-rows">
+						
+						<div class="cell-01 contact-info-area">
+							<div class="area-inner">
+								<h2 class="section-title-larger text-color-01"><span>Liên hệ</span></h2>
+								<p><strong>Cùng FPT Online đồng hành tới thành công</strong></p>
+								<br>
+								<div class="contact-info">
+									<h2 class="contact-title-2">FPT Online Hà Nội</h2>
+									<p><i class="fas fa-home"></i> Tầng 4-5, Tòa nhà FPT, Phố Duy Tân, P. Dịch Vọng Hậu, Quận Cầu Giấy, TP. Hà Nội</p>
+									<p><i class="fas fa-phone-volume"></i> Hotline: <span>+84 - 24 - 7300 9999</span></p>
+									<div class="clearfix my-3"></div>
+									<h2 class="contact-title-2">FPT Online Hồ Chí Minh</h2>
+									<p><i class="fas fa-home"></i> Tầng 6-7, Tòa nhà Exchange Tower, số 1 Nam Kỳ Khởi Nghĩa, P. Nguyễn Thái Bình, Quận 1, TP. Hồ Chí Minh</p>
+									<p><i class="fas fa-phone-volume"></i> Hotline: <span>+84 - 28 - 7300 9999</span></p>
+								</div>
+
+							</div>
+						</div>
+						<div class="cell-03 contact-from-area mt-3 mt-lg-0">
+							<div class="area-inner">
+
+								<div class="contact-form">
+									<form action="" method="post" id="contactForm" class="form-horizontal">
+										<fieldset>
+											<!-- Text input-->
+											<div class="form-group row mgbt0">
+												<div class="col-sm-12 mgbt15">
+													<input type="text" class="form-control" name="contact_name" id="frm_contact_name" placeholder="Họ tên*" required>
+												</div>
+											</div>
+											<!-- Text input-->
+											<div class="form-group row mgbt0">
+												<div class="col-sm-12 mgbt15">
+													<input type="text" class="form-control" name="contact_address" id="frm_contact_address" placeholder="Doanh nghiệp*" required>
+												</div>
+											</div>
+											<!-- Select option-->
+											<div class="form-group row mgbt0">
+												<div class="col-sm-12 mgbt15 wrap-select">
+													<select id="selectbasic" class="form-control" name="selectbasic" required>
+														<option value="" disabled selected>Tỉnh thành*</option>
+														<option value="1">Option one</option>
+														<option value="2">Option two</option>
+													</select>
+												</div>
+											</div>
+											<!-- Text input-->
+											<div class="form-group row mgbt0">
+												<div class="col-sm-12 mgbt15">
+													<input type="email" class="form-control" name="contact_email" id="frm_contact_email" placeholder="Email*" required>
+												</div>
+											</div>
+											<!-- Number input-->
+											<div class="form-group row mgbt0">
+												<div class="col-sm-12 mgbt20">
+													<input type="phone" class="form-control" name="contact_phone" id="frm_contact_phone" placeholder="Điện thoại*" required>
+												</div>
+											</div>
+											<!-- Textarea-->
+											<div class="form-group row">
+												<div class="col-sm-12 mgbt30">
+													<textarea class="form-control" name="contact_message" id="frm_contact_content" rows="3" placeholder="Tin nhắn*" required></textarea>
+												</div>
+											</div>
+											<!-- Button-->
+											<div class="form-group row">
+												<div class="col-sm-12">
+													<button type="submit" class="btn btn-submit">Gửi</button>
+												</div>
+											</div>
+
+										</fieldset>
+										
+									</form>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+		
+
+	</main>
+	
+
+
+	<footer class="footer_area" id="footer_area">
+		<div class="footer-inner">
+			<div class="footer-middle">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-3">
+							<a class="logo-footer" href="" title="">
+								<img src="images/logo-footer.svg" alt="">
+							</a>
+						</div>
+						<div class="d-none d-sm-block col-lg-2 col-md-3 col-sm-4">
+							<div class="widget">
+								<ul class="widget_links">
+									<li><a class="bold" href="index.html" title="">Trang chủ</a></li>
+									<li><a class="bold" href="solution.html" title="">Giải pháp</a></li>
+									<li><a class="bold" href="partner.html" title="">Đối tác</a></li>
+									<li><a class="bold" href="about-us.html" title="">Về chúng tôi</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="d-none d-sm-block col-lg-2 col-md-3 col-sm-4">
+							<div class="widget">
+								<ul class="widget_links">
+									<li><a class="bold" href="community-relations.html" title="">Quan hệ cổ đông</a></li>
+									<li><a class="bold" href="recruitment.html" title="">Việc làm</a></li>
+									<li><a class="bold" href="#" title="">Case Study</a></li>
+									<li><a class="bold" href="contact.html" title="">Liên hệ</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="d-none d-sm-block col-lg-2 col-md-3 col-sm-4">
+							<div class="widget">
+								<ul class="widget_links">
+									<li><a class="font-14" href="terms-policy.html" title="">Điều khoản sử dụng</a></li>
+									<li><a class="font-14" href="terms-policy.html" title="">Chính sách bảo mật</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-1 col-0">
+							<div class="wrap-btn">
+								<span class="btn-go-top" title="Về đầu trang"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom pb-3">
+			<div class="container">
+				<div class="row">
+					<div class="col col-lg-4 col-md-3 col-sm-4 col-12 order-md-2">
+						<ul class="list-socail-ft justify-content-sm-start">
+							<li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-square"></i></a></li>
+							<li><a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter-square"></i></a></li>
+							<li><a href="#" target="_blank" title="Instagram +"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#" target="_blank" title="Youtube"><i class="fab fa-youtube-square"></i></a></li>
+						</ul>
+					</div>
+					<div class="col col-lg-8 col-md-9 col-sm-8 col-12 order-md-1">
+						<div class="copyright text-sm-start">
+							<p>© 2007-2021. Toàn bộ bản quyền thuộc về FPT Online</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<span class="btn-go-top back-to-top-badge back-to-top-small"><i class="fal fa-angle-up"></i></span>
+
+
+	<!-- Start popup menu -->
+	<aside class="aside_area" id="showNavSideMenu">
+		<div class="bg_drop" onclick="showMenu();"></div>
+		<nav class="nav-aside">
+			<ul class="list-menu-cate">
+
+				<li class="item-menu-cate">
+					<a class="menu-link" href="index.html" title="">
+						<span class="menu-name">Trang chủ</span>
+					</a>
+				</li>
+				<li class="item-menu-cate">
+					<a class="menu-link" href="solution.html" title="">
+						<span class="menu-name">Giải pháp</span>
+					</a>
+				</li>
+				<li class="item-menu-cate">
+					<a class="menu-link" href="partner.html" title="">
+						<span class="menu-name">Đối tác</span>
+					</a>
+				</li>
+				<li class="item-menu-cate">
+					<a class="menu-link" href="community-relations.html" title="">
+						<span class="menu-name">Quan hệ cổ đông</span>
+					</a>
+				</li>
+				<li class="item-menu-cate">
+					<a class="menu-link" href="recruitment.html" title="">
+						<span class="menu-name">Tuyển dụng</span>
+					</a>
+
+					<span class="btn-toggle active"></span>
+					<ul class="menu-list-lv2 active">
+					    <li class="item-menu">
+					        <a href="#" title="Menu level 2">
+					          Menu level 2
+					        </a>
+
+					        <span class="btn-toggle"></span>
+					        <ul class="menu-list-lv2">
+					            <li class="item-menu">
+					              <a href="#" title="Menu level 3">
+					                Menu level 3
+					              </a>
+					            </li>
+					        </ul>
+
+					    </li>
+					</ul>
+				</li>
+				<li class="item-menu-cate">
+					<a class="menu-link" href="about-us.html" title="">
+						<span class="menu-name">Giới thiệu</span>
+					</a>
+				</li>
+				<li class="item-menu-cate">
+					<a class="menu-link" href="contact.html" title="">
+						<span class="menu-name">Liên hệ</span>
+					</a>
+				</li>
+				<li class="item-menu-cate">
+					<a class="menu-link" href="terms-policy.html" title="">
+						<span class="menu-name">Điều khoản sử dụng</span>
+					</a>
+				</li>
+				<li class="item-menu-cate">
+					<a class="menu-link" href="terms-policy.html" title="">
+						<span class="menu-name">Chính sách bảo mật</span>
+					</a>
+				</li>
+
+			</ul>
+			<ul class="list-socail-ft">
+				<li><a href="#" title="Facebook"><i class="fab fa-facebook-square"></i></a></li>
+				<li><a href="#" title="Twitter"><i class="fab fa-twitter-square"></i></a></li>
+				<li><a href="#" title="Instagram +"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="#" title="Youtube"><i class="fab fa-youtube-square"></i></a></li>
+			</ul>
+		</nav>
+	</aside>
+	<!-- End popup menu -->
+
+
+	<!-- Start #wrap_popup_page - Group popup page - Globe -->
+	<div class="wrap-popup-page" id="wrap_popup_page">
+
+		<div class="group-action-control-right">
+			<a href="#" target="_blank" title="Gọi ngay Hotline" class="btn-control btn-feedback">
+				<span>
+					<i class="fas fa-phone"></i>
+				</span>
+				<span>Hotline</span>
+			</a>
+			<a href="#" title="Trang trên Facebook" target="_blank" class="btn-control btn-goVNE">
+				<span>
+					<i class="fas fa-comments"></i>
+				</span>
+				<span>Messenger</span>
+			</a>
+		</div>
+		
+		<div class="popup-page-home"></div>
+		
+	</div>
+	<!-- End #wrap_popup_page - Group popup page - Globe -->
+
+	<script src="js/main.min.js"></script>
+	
+	
+</body>
+</html>
